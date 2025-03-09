@@ -1,6 +1,6 @@
 # Timer SPA Project
 
-![Timer SPA](https://prnt.sc/NPsMxFPW5gcJ)
+![Timer SPA](/public/Image-project.png)
 
 ## Descrição
 
