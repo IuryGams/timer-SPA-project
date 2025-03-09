@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+# Timer SPA Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Timer SPA](https://prnt.sc/NPsMxFPW5gcJ)
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **Timer SPA Project** é uma aplicação de página única (SPA) desenvolvida com React, TypeScript e Vite. O objetivo principal deste projeto é fornecer uma interface intuitiva para gerenciamento de ciclos de tempo, permitindo aos usuários monitorar e registrar períodos específicos de atividade.
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Vite**: Build tool que oferece uma experiência de desenvolvimento rápida e otimizada.
+- **date-fns**: Biblioteca para manipulação de datas e horários.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Cadastro de Ciclos**: Permite aos usuários registrar novos ciclos com informações detalhadas, incluindo data de início e descrição.
+- **Visualização de Ciclos**: Exibe uma lista dos ciclos cadastrados, com opções de ordenação pelos mais recentes.
+- **Edição e Exclusão**: Oferece funcionalidades para editar ou remover ciclos existentes.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Instalação e Execução
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Para rodar o projeto localmente, siga os passos abaixo:
+
+1. **Clone o repositório**:
+
+   ```bash
+   git clone https://github.com/IuryGams/timer-SPA-project.git
